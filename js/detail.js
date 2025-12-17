@@ -78,6 +78,26 @@ const detailData = {
             'https://cdn.antaranews.com/cache/1200x800/2024/11/12/Upacara-Abhiseka-Prambanan-121124-hnd-02.jpg',
             'https://upload.wikimedia.org/wikipedia/commons/a/a7/Sunset_Di_Candi_Prambanan.jpg'
         ]
+    },
+    5: {
+        name: 'Gunung Bromo',
+        location: 'Probolinggo, East Java',
+        category: 'alam',
+        image: 'https://plus.unsplash.com/premium_photo-1697729935951-420138024919?q=80&w=1920',
+        description: `
+            <p>Mount Bromo is an active volcano located in East Java, Indonesia, part of Bromo Tengger Semeru National Park.</p>
+            <p>Famous for its vast crater and surrounding sea of sand, Bromo is one of the most popular natural tourism spots.</p>
+            <p>The sunrise view from Penanjakan Peak, with the majestic volcanic backdrop, creates an unforgettable experience for hikers and photographers.</p>
+        `,
+        hours: '24 hours (best visit at sunrise 04:00 - 06:00)',
+        price: 'Rp 30.000 (Domestic) / Rp 220.000 (International) + jeep',
+        mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1234567890!2d110.4!3d-7.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDInMDAuMCJTIDExMMKwMjQnMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid',
+        gallery: [
+            'https://jadiberangkat.id/wp-content/uploads/2024/12/Bromo-tengger-semeru-_3__11zon-1024x682.webp',
+            'https://assets.telkomsel.com/public/2025-04/Wisata-Gunung-Bromo-Sunrise-Terbaik-Harga-Tiket-2025.jpg?VersionId=mwJ78AOKA.eTbofwSVP9HNjiLZce0oaW',
+            'https://upload.wikimedia.org/wikipedia/commons/a/af/Riding_up_the_volcano_Mount_Bromo.jpg',
+            'https://statik.tempo.co/data/2023/09/07/id_1234989/1234989_720.jpg'
+        ]
     }
 };
 

@@ -91,7 +91,7 @@ const detailData = {
         `,
         hours: '24 hours (best visit at sunrise 04:00 - 06:00)',
         price: 'Rp 30.000 (Domestic) / Rp 220.000 (International) + jeep',
-        mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1234567890!2d110.4!3d-7.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDInMDAuMCJTIDExMMKwMjQnMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid',
+        mapUrl: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15806.180865285827!2d112.94271243433784!3d-7.942472071298852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sMt%20Bromo!5e0!3m2!1sen!2sid!4v1765986921027!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         gallery: [
             'https://jadiberangkat.id/wp-content/uploads/2024/12/Bromo-tengger-semeru-_3__11zon-1024x682.webp',
             'https://assets.telkomsel.com/public/2025-04/Wisata-Gunung-Bromo-Sunrise-Terbaik-Harga-Tiket-2025.jpg?VersionId=mwJ78AOKA.eTbofwSVP9HNjiLZce0oaW',

@@ -1,4 +1,3 @@
-// Gallery Data
 const galleryImages = [
     { src: 'https://images.unsplash.com/photo-1703769605297-cc74106244d9?q=80&w=884', title: 'Raja Ampat' },
     { src: 'https://images.unsplash.com/photo-1631340729644-8b8aad1e9dba?q=80&w=870', title: 'Borobudur' },
@@ -16,13 +15,11 @@ const galleryImages = [
 
 let currentImageIndex = 0;
 
-// Initialize gallery
 document.addEventListener('DOMContentLoaded', function() {
     renderGallery();
     setupLightbox();
 });
 
-// Render gallery
 function renderGallery() {
     const galleryGrid = document.getElementById('galleryGrid');
     if (!galleryGrid) return;
@@ -37,7 +34,6 @@ function renderGallery() {
     `).join('');
 }
 
-// Open lightbox
 function openLightbox(index) {
     currentImageIndex = index;
     const lightbox = document.getElementById('lightbox');
@@ -51,7 +47,6 @@ function openLightbox(index) {
     }
 }
 
-// Close lightbox
 function closeLightbox() {
     const lightbox = document.getElementById('lightbox');
     if (lightbox) {
@@ -60,7 +55,6 @@ function closeLightbox() {
     }
 }
 
-// Navigate lightbox
 function navigateLightbox(direction) {
     if (direction === 'prev') {
         currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
@@ -75,7 +69,6 @@ function navigateLightbox(direction) {
     }
 }
 
-// Setup lightbox controls
 function setupLightbox() {
     const lightbox = document.getElementById('lightbox');
     const lightboxClose = document.querySelector('.lightbox-close');

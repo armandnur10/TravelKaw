@@ -1,4 +1,3 @@
-// Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const menuBtn = document.querySelector('.menu-btn');
     const navMenu = document.querySelector('.nav-menu');
@@ -8,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
             navMenu.classList.toggle('active');
         });
 
-        // Close menu when clicking on a link
         const navLinks = document.querySelectorAll('.nav-menu a');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
@@ -17,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Search functionality (dummy)
     const searchInput = document.getElementById('searchInput');
     const searchBtn = document.querySelector('.btn-search');
     

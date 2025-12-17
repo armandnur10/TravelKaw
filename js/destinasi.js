@@ -1,4 +1,3 @@
-// Destination Data
 const destinations = [
     {
         id: 1,

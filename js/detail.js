@@ -1,4 +1,3 @@
-// Detail Data
 const detailData = {
     1: {
         name: 'Raja Ampat, Papua',
@@ -82,7 +81,6 @@ const detailData = {
     }
 };
 
-// Get category label (display labels in English)
 function getCategoryLabel(category) {
     const labels = {
         'alam': '🏔️ Nature',
@@ -92,25 +90,21 @@ function getCategoryLabel(category) {
     return labels[category] || category;
 }
 
-// Initialize detail page
 document.addEventListener('DOMContentLoaded', function() {
     const urlParams = new URLSearchParams(window.location.search);
     const id = parseInt(urlParams.get('id')) || 1;
     const data = detailData[id] || detailData[1];
 
-    // Set hero image
     const detailHero = document.getElementById('detailHero');
     if (detailHero) {
         detailHero.innerHTML = `<img src="${data.image}" alt="${data.name}">`;
     }
 
-    // Set title
     const detailTitle = document.getElementById('detailTitle');
     if (detailTitle) {
         detailTitle.textContent = data.name;
     }
 
-    // Set category and location
     const detailCategory = document.getElementById('detailCategory');
     const detailLocation = document.getElementById('detailLocation');
     if (detailCategory) {
@@ -120,13 +114,11 @@ document.addEventListener('DOMContentLoaded', function() {
         detailLocation.textContent = `📍 ${data.location}`;
     }
 
-    // Set description
     const detailDescription = document.getElementById('detailDescription');
     if (detailDescription) {
         detailDescription.innerHTML = data.description;
     }
 
-    // Set info
     const infoLocation = document.getElementById('infoLocation');
     const infoHours = document.getElementById('infoHours');
     const infoPrice = document.getElementById('infoPrice');
@@ -135,7 +127,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (infoHours) infoHours.textContent = data.hours;
     if (infoPrice) infoPrice.textContent = data.price;
 
-    // Set gallery
     const detailGallery = document.getElementById('detailGallery');
     if (detailGallery) {
         detailGallery.innerHTML = data.gallery.map((img, index) => `
@@ -143,14 +134,12 @@ document.addEventListener('DOMContentLoaded', function() {
         `).join('');
     }
 
-    // Set map
     const mapContainer = document.getElementById('mapContainer');
     if (mapContainer) {
         mapContainer.innerHTML = `<iframe src="${data.mapUrl}" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
     }
 });
 
-// Lightbox function for gallery
 function openLightbox(imageSrc) {
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightboxImage');
@@ -161,7 +150,6 @@ function openLightbox(imageSrc) {
     }
 }
 
-// Close lightbox
 document.addEventListener('DOMContentLoaded', function() {
     const lightbox = document.getElementById('lightbox');
     if (lightbox) {

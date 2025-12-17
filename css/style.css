@@ -83,10 +83,6 @@ h1, h2, h3, h4, h5, h6 {
     transition: opacity 0.3s ease;
 }
 
-.menu-btn:hover {
-    opacity: 0.7;
-}
-
 .hamburger-icon {
     display: flex;
     flex-direction: column;
@@ -1461,6 +1457,10 @@ h1, h2, h3, h4, h5, h6 {
 
     .menu-btn{
         opacity: 1;
+    }
+
+    .menu-btn:hover {
+        opacity: 0.7;
     }
     .navbar {
         padding: 15px 20px;

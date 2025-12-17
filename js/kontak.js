@@ -1,4 +1,3 @@
-// Form validation and submission
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contactForm');
     const modal = document.getElementById('successModal');
@@ -8,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             
             if (validateForm()) {
-                // Show success modal
                 if (modal) {
                     modal.classList.add('active');
                     form.reset();
@@ -18,13 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Close modal
     const modalClose = document.querySelector('.modal-close');
     if (modalClose) {
         modalClose.addEventListener('click', closeModal);
     }
 
-    // Close modal on background click
     if (modal) {
         modal.addEventListener('click', function(e) {
             if (e.target === modal) {
@@ -33,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Real-time validation
     const namaInput = document.getElementById('nama');
     const emailInput = document.getElementById('email');
     const pesanInput = document.getElementById('pesan');
@@ -57,7 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Validate form
 function validateForm() {
     const nama = document.getElementById('nama').value.trim();
     const email = document.getElementById('email').value.trim();
@@ -83,7 +77,6 @@ function validateForm() {
     return isValid;
 }
 
-// Validate individual field
 function validateField(fieldName, value) {
     const errorElement = document.getElementById(`error${fieldName.charAt(0).toUpperCase() + fieldName.slice(1)}`);
     let isValid = true;
@@ -128,13 +121,11 @@ function validateField(fieldName, value) {
     return isValid;
 }
 
-// Email validation
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
 
-// Clear all errors
 function clearErrors() {
     const errorMessages = document.querySelectorAll('.error-message');
     errorMessages.forEach(error => {
@@ -142,7 +133,6 @@ function clearErrors() {
     });
 }
 
-// Close modal
 function closeModal() {
     const modal = document.getElementById('successModal');
     if (modal) {

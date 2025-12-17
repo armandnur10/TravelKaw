@@ -91,12 +91,152 @@ const detailData = {
         `,
         hours: '24 hours (best visit at sunrise 04:00 - 06:00)',
         price: 'Rp 30.000 (Domestic) / Rp 220.000 (International) + jeep',
-        mapUrl: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15806.180865285827!2d112.94271243433784!3d-7.942472071298852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sMt%20Bromo!5e0!3m2!1sen!2sid!4v1765986921027!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1234567890!2d110.4!3d-7.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDInMDAuMCJTIDExMMKwMjQnMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid',
         gallery: [
             'https://jadiberangkat.id/wp-content/uploads/2024/12/Bromo-tengger-semeru-_3__11zon-1024x682.webp',
             'https://assets.telkomsel.com/public/2025-04/Wisata-Gunung-Bromo-Sunrise-Terbaik-Harga-Tiket-2025.jpg?VersionId=mwJ78AOKA.eTbofwSVP9HNjiLZce0oaW',
             'https://upload.wikimedia.org/wikipedia/commons/a/af/Riding_up_the_volcano_Mount_Bromo.jpg',
             'https://statik.tempo.co/data/2023/09/07/id_1234989/1234989_720.jpg'
+        ]
+    },
+    6: {
+        name: 'Pulau Komodo',
+        location: 'East Nusa Tenggara',
+        category: 'alam',
+        image: 'https://plus.unsplash.com/premium_photo-1661876927993-bedb3ab87208?q=80&w=1920',
+        description: `
+            <p>Komodo Island is part of Komodo National Park in East Nusa Tenggara, Indonesia, a UNESCO World Heritage Site.</p>
+            <p>The island is famous as the native habitat of the Komodo dragon, the world's largest lizard.</p>
+            <p>Besides seeing Komodo dragons in the wild, visitors can enjoy the unique pink beach, snorkeling, and dramatic savanna and hill views.</p>
+        `,
+        hours: '24 hours (guided tours recommended)',
+        price: 'Rp 150.000 (Domestic) / Rp 500.000 (International) + boat',
+        mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1234567890!2d110.4!3d-7.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDInMDAuMCJTIDExMMKwMjQnMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid',
+        gallery: [
+            'https://upload.wikimedia.org/wikipedia/commons/3/3a/Komodo_dragon_at_Komodo_National_Park.jpg',
+            'https://upload.wikimedia.org/wikipedia/commons/e/e3/Komodo_Island_north_aerial.jpg',
+            'https://calicojackcharters.com/wp-content/uploads/2024/06/komodo-fighting.jpg',
+            'https://upload.wikimedia.org/wikipedia/commons/3/3a/Komodo_dragon_at_Komodo_National_Park.jpg'
+        ]
+    },
+    7: {
+        name: 'Kampung Budaya Betawi',
+        location: 'South Jakarta',
+        category: 'budaya',
+        image: 'https://nativeindonesia.com/foto/2021/09/situ-babakan.jpg',
+        description: `
+            <p>Betawi Cultural Village Setu Babakan is a preservation area for Betawi culture in South Jakarta, centered around Lake Setu Babakan.</p>
+            <p>This place showcases traditional Betawi houses, performances such as lenong, topeng dance, and ondel-ondel puppets, as well as signature cuisine.</p>
+            <p>Visitors can directly experience the life and cultural heritage of Jakarta's indigenous people, making it a cultural oasis in the metropolitan city.</p>
+        `,
+        hours: '08:00 AM - 05:00 PM (Every day)',
+        price: 'Rp 10.000 - Rp 30.000 (entry + show)',
+        mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1234567890!2d110.4!3d-7.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDInMDAuMCJTIDExMMKwMjQnMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid',
+        gallery: [
+            'https://upload.wikimedia.org/wikipedia/commons/2/25/Setu_Babakan.jpg',
+            'https://awsimages.detik.net.id/community/media/visual/2021/03/02/kondisi-ppkm-di-setu-babakan_169.jpeg?w=1200',
+            'https://cdn.rri.co.id/berita/Jakarta/o/1743787410000-IMG_9880/ugtc7bxo9hqpaij.jpeg',
+            'https://upload.wikimedia.org/wikipedia/commons/2/25/Setu_Babakan.jpg'
+        ]
+    },
+    8: {
+        name: 'Pasar Gede Solo',
+        location: 'Surakarta, Central Java',
+        category: 'budaya',
+        image: 'https://www.jogjasuper.co.id/wp-content/uploads/2024/03/lokasi-Pasar-Gede-Hardjonagoro.png',
+        description: `
+            <p>Pasar Gede, or Pasar Harjonagoro, is the oldest and largest traditional market in Surakarta (Solo), Central Java.</p>
+            <p>Built with beautiful colonial architecture, the market sells various goods such as batik, local foods, spices, and daily needs.</p>
+            <p>Visitors can experience the lively and authentic atmosphere of a Javanese traditional market while enjoying local cuisine.</p>
+        `,
+        hours: '06:00 AM - 06:00 PM (Every day)',
+        price: 'Free entry (shopping costs vary)',
+        mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1234567890!2d110.4!3d-7.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDInMDAuMCJTIDExMMKwMjQnMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid',
+        gallery: [
+            'https://balistarisland.com/wp-content/uploads/2024/04/gede-hardjonagoro-market1-800x600.webp',
+            'https://www.shutterstock.com/shutterstock/videos/3522673055/thumb/1.jpg?ip=x480',
+            'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/ec/22/be/pasar-gede-solo.jpg?w=900&h=500&s=1',
+            'https://imgcdn.espos.id/@espos/images/2020/03/Pasar-Gede-Solo-.jpg'
+        ]
+    },
+    9: {
+        name: 'Danau Toba',
+        location: 'North Sumatra',
+        category: 'alam',
+        image: 'https://images.unsplash.com/photo-1623598122059-9b5ef17619c8?q=80&w=1920',
+        description: `
+            <p>Lake Toba is the largest volcanic lake in the world, located in North Sumatra, Indonesia, and one of the most iconic natural tourism destinations. Formed from a supervolcano eruption thousands of years ago, the lake features Samosir Island in its center, rich in Batak culture.</p>
+            <p>Lake Toba is renowned for its stunning scenery, clear waters, and cool air, making it an ideal spot for relaxation and enjoying natural beauty.</p>
+            <p>Visitors can enjoy traditional Batak music, visit ancient tombs, and experience the unique culture while surrounded by breathtaking lake views.</p>
+        `,
+        hours: '24 hours (Open every day)',
+        price: 'Rp 200.000 - Rp 800.000 (depending on activities)',
+        mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1234567890!2d110.4!3d-7.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDInMDAuMCJTIDExMMKwMjQnMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid',
+        gallery: [
+            'https://upload.wikimedia.org/wikipedia/commons/c/c4/Lake_Toba_and_the_surrounding_hills.jpg',
+            'https://i.natgeofe.com/n/9895ca1b-9eea-4cae-96b0-5bb115e41183/mot-indonesia-toba-1_3x2.jpg',
+            'https://cdn.audleytravel.com/1050/750/79/16027403-lake-toba-at-sunset-sumatra.webp',
+            'https://i.natgeofe.com/n/9895ca1b-9eea-4cae-96b0-5bb115e41183/mot-indonesia-toba-1_3x2.jpg'
+        ]
+    },
+     10: {
+        name: 'Warung Mak Beng',
+        location: 'Sanur, Bali',
+        category: 'kuliner',
+        image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/4f/ea/b6/view-from-outside.jpg?w=1920',
+        description: `
+            <p>Warung Mak Beng is a legendary eatery in Sanur, Bali, famous for its single menu: fried fish in flour with spicy-sour fish head soup.</p>
+            <p>Established since the 1940s, this simple warung has become a Bali culinary icon that's always crowded with tourists.</p>
+            <p>Its authentic taste and affordable prices make it a must-try authentic Balinese dining experience.</p>
+        `,
+        hours: '08:00 AM - 09:00 PM (Every day)',
+        price: 'Rp 35.000 - Rp 50.000 per portion',
+        mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1234567890!2d110.4!3d-7.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDInMDAuMCJTIDExMMKwMjQnMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid',
+        gallery: [
+            'https://i.ytimg.com/vi/TRyeNTLASiQ/maxresdefault.jpg',
+            'https://awsimages.detik.net.id/community/media/visual/2023/06/26/menu-ikan-goreng-di-warung-mak-beng-sanur-bali-dok-kemenparekraf.jpeg?w=1200',
+            'https://assets.grab.com/wp-content/uploads/sites/9/2019/07/27170823/Mak-Beng-Food-blog-social-.jpg',
+            'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/ef/a6/4e/caption.jpg?w=1200&h=1200&s=1'
+        ]
+    },
+     11: {
+        name: 'Museum Nasional',
+        location: 'Jakarta',
+        category: 'budaya',
+        image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/6e/01/bb/the-building.jpg?w=1920',
+        description: `
+            <p>The National Museum of Indonesia, known as the Elephant Museum, is the largest and oldest museum in Indonesia, located in Central Jakarta.</p>
+            <p>Its collection includes prehistoric artifacts, Hindu-Buddhist items, ethnography, and ceramics from across the archipelago.</p>
+            <p>The museum is an important place to understand Indonesia's history and cultural diversity through thousands of valuable collections.</p>
+        `,
+        hours: '08:00 AM - 04:00 PM (Closed on Mondays)',
+        price: 'Rp 5.000 (Domestic) / Rp 30.000 (International)',
+        mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1234567890!2d110.4!3d-7.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDInMDAuMCJTIDExMMKwMjQnMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid',
+        gallery: [
+            'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/6e/01/bb/the-building.jpg?w=900&h=500&s=1',
+            'https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/fvdkvpsktolsl7dribrg/National%20Museum%20of%20Indonesia.jpg',
+            'https://www.cestee.com/images/55/50/45550-920w.webp',
+            'https://www.shutterstock.com/image-photo/jakarta-3-april-2025-national-260nw-2614350301.jpg'
+        ]
+    },
+     6: {
+        name: 'Gudeg Yogyakarta',
+        location: 'Yogyakarta',
+        category: 'kuliner',
+        image: 'https://cdn-1.timesmedia.co.id/images/2022/12/21/gudeg-2.jpg',
+        description: `
+            <p>Gudeg Yogyakarta is a signature dish from Yogyakarta made from young jackfruit cooked slowly with palm sugar and coconut milk until it turns reddish-brown.</p>
+            <p>This dish is typically served with rice, kampung chicken, boiled eggs, and krecek sambal, offering a unique sweet-savory flavor.</p>
+            <p>Gudeg is often regarded as a symbol of Yogyakarta's cuisine and a favorite among tourists seeking authentic Javanese tastes.</p>
+        `,
+        hours: 'Open 24 hours (many warungs)',
+        price: 'Rp 25.000 - Rp 60.000 per portion',
+        mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1234567890!2d110.4!3d-7.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDInMDAuMCJTIDExMMKwMjQnMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid',
+        gallery: [
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Nasi_Gudeg.jpg/1200px-Nasi_Gudeg.jpg',
+            'https://www.tasteatlas.com/images/dishes/58f8b8a6d12c4a2c87364cb114be7e94.jpg',
+            'http://www.tasty-indonesian-food.com/wp-content/uploads/2013/05/DSC02080.jpg',
+            'https://cnc-magazine.oramiland.com/parenting/original_images/Gudeg_Jogja.jpg'
         ]
     }
 };

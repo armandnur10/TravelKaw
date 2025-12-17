@@ -3,7 +3,7 @@ const detailData = {
         name: 'Raja Ampat, Papua',
         location: 'West Papua',
         category: 'alam',
-        image: 'https://images.unsplash.com/photo-1703769605297-cc74106244d9?q=80&w=884',
+        image: 'https://images.unsplash.com/photo-1703769605297-cc74106244d9?q=80&w=1920',
         description: `
             <p>Raja Ampat is an archipelago located in northwest Papua. This destination is famous as an underwater paradise with incredibly rich marine biodiversity. Raja Ampat has more than 1,500 small islands and is home to over 75% of the world’s coral species.</p>
             <p>The underwater beauty of Raja Ampat is unmatched. You can dive or snorkel at various spots that offer pristine coral reefs, colorful tropical fish, and the chance to see sharks, manta rays, and many other marine creatures.</p>
@@ -13,10 +13,10 @@ const detailData = {
         price: 'Rp 500.000 - Rp 1.000.000',
         mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127672.1234567890!2d130.5!3d-0.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMzAnMDAuMCJTIDEzMMKwMzAnMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid',
         gallery: [
-            'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
-            'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
-            'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
-            'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800'
+            'https://eoxpgo8n2d8.exactdn.com/storage/2025/06/Wuki-travel-risool-raja-ampat-4.webp?strip=all',
+            'https://indonesiakaya.com/wp-content/uploads/2020/10/raja-ampat-surga1200.jpg',
+            'https://ik.trn.asia/uploads/2025/06/1749438168724.jpeg',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/633326998.jpg?k=2112efc00c0e63cb03b75d488c1212a122b631fbe89f943ae261a1f9feada18c&o='
         ]
     },
     2: {

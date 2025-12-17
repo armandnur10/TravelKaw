@@ -3,7 +3,7 @@ const detailData = {
         name: 'Raja Ampat, Papua',
         location: 'West Papua',
         category: 'alam',
-        image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920',
+        image: 'https://images.unsplash.com/photo-1703769605297-cc74106244d9?q=80&w=884',
         description: `
             <p>Raja Ampat is an archipelago located in northwest Papua. This destination is famous as an underwater paradise with incredibly rich marine biodiversity. Raja Ampat has more than 1,500 small islands and is home to over 75% of the world’s coral species.</p>
             <p>The underwater beauty of Raja Ampat is unmatched. You can dive or snorkel at various spots that offer pristine coral reefs, colorful tropical fish, and the chance to see sharks, manta rays, and many other marine creatures.</p>

@@ -1,17 +1,17 @@
 // Gallery Data
 const galleryImages = [
-    { src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800', title: 'Raja Ampat' },
-    { src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800', title: 'Borobudur' },
-    { src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800', title: 'Pantai Kuta' },
-    { src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800', title: 'Prambanan' },
-    { src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800', title: 'Gunung Bromo' },
-    { src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800', title: 'Pulau Komodo' },
-    { src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800', title: 'Danau Toba' },
-    { src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800', title: 'Bali' },
-    { src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800', title: 'Yogyakarta' },
-    { src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800', title: 'Lombok' },
-    { src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800', title: 'Bromo Tengger' },
-    { src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800', title: 'Raja Ampat' }
+    { src: 'https://images.unsplash.com/photo-1703769605297-cc74106244d9?q=80&w=884', title: 'Raja Ampat' },
+    { src: 'https://images.unsplash.com/photo-1631340729644-8b8aad1e9dba?q=80&w=870', title: 'Borobudur' },
+    { src: 'https://images.unsplash.com/photo-1551008475-4533d141425b?q=80&w=774', title: 'Pantai Kuta' },
+    { src: 'https://plus.unsplash.com/premium_photo-1700954929488-82c05cebb075?q=80&w=928', title: 'Prambanan' },
+    { src: 'https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?q=80&w=871', title: 'Gunung Bromo' },
+    { src: 'https://plus.unsplash.com/premium_photo-1661913064849-ece1ab4ddbe7?q=80&w=1170', title: 'Pulau Komodo' },
+    { src: 'https://images.unsplash.com/photo-1601058497548-f247dfe349d6?q=80&w=870', title: 'Danau Toba' },
+    { src: 'https://plus.unsplash.com/premium_photo-1677829177642-30def98b0963?q=80&w=870', title: 'Bali' },
+    { src: 'https://images.unsplash.com/photo-1602057512587-76d5cc4b34e2?q=80&w=872', title: 'Yogyakarta' },
+    { src: 'https://images.unsplash.com/photo-1583022846753-83a4eba54ac1?q=80&w=774', title: 'Lombok' },
+    { src: 'https://plus.unsplash.com/premium_photo-1663047414065-40ec161a11bf?q=80&w=1033', title: 'Bromo Tengger' },
+    { src: 'https://images.unsplash.com/photo-1650445332429-75ceee3f3226?q=80&w=1032', title: 'Raja Ampat' }
 ];
 
 let currentImageIndex = 0;

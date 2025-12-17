@@ -1,21 +1,21 @@
-// Destinasi Data
+// Destination Data
 const destinations = [
     {
         id: 1,
         name: 'Raja Ampat, Papua',
-        location: 'Papua Barat',
+        location: 'West Papua',
         category: 'alam',
         image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
-        description: 'Surga bawah laut dengan keindahan terumbu karang yang menakjubkan',
+        description: 'Underwater paradise with stunning coral reefs and rich marine life',
         popular: true
     },
     {
         id: 2,
         name: 'Candi Borobudur',
-        location: 'Magelang, Jawa Tengah',
+        location: 'Magelang, Central Java',
         category: 'budaya',
         image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
-        description: 'Candi Buddha terbesar di dunia, warisan budaya UNESCO',
+        description: 'The largest Buddhist temple in the world and a UNESCO World Heritage site',
         popular: true
     },
     {
@@ -24,7 +24,7 @@ const destinations = [
         location: 'Badung, Bali',
         category: 'alam',
         image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
-        description: 'Pantai eksotis dengan sunset yang memukau',
+        description: 'An exotic beach famous for its breathtaking sunset views',
         popular: true
     },
     {
@@ -33,25 +33,25 @@ const destinations = [
         location: 'Sleman, Yogyakarta',
         category: 'budaya',
         image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
-        description: 'Kompleks candi Hindu terbesar di Indonesia',
+        description: 'The largest Hindu temple complex in Indonesia',
         popular: true
     },
     {
         id: 5,
         name: 'Gunung Bromo',
-        location: 'Probolinggo, Jawa Timur',
+        location: 'Probolinggo, East Java',
         category: 'alam',
         image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
-        description: 'Gunung berapi aktif dengan pemandangan sunrise yang spektakuler',
+        description: 'An active volcano with spectacular sunrise panoramas',
         popular: false
     },
     {
         id: 6,
         name: 'Pulau Komodo',
-        location: 'Nusa Tenggara Timur',
+        location: 'East Nusa Tenggara',
         category: 'alam',
         image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
-        description: 'Habitat asli komodo dan keindahan alam yang menakjubkan',
+        description: 'The natural habitat of Komodo dragons with incredible landscapes',
         popular: false
     },
     {
@@ -60,25 +60,25 @@ const destinations = [
         location: 'Jakarta',
         category: 'budaya',
         image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
-        description: 'Mengenal budaya Betawi dengan berbagai atraksi tradisional',
+        description: 'Experience Betawi culture with various traditional performances',
         popular: false
     },
     {
         id: 8,
         name: 'Pasar Gede Solo',
-        location: 'Surakarta, Jawa Tengah',
+        location: 'Surakarta, Central Java',
         category: 'kuliner',
         image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
-        description: 'Pasar tradisional dengan berbagai kuliner khas Solo',
+        description: 'Traditional market offering various authentic Solo culinary delights',
         popular: false
     },
     {
         id: 9,
         name: 'Danau Toba',
-        location: 'Sumatera Utara',
+        location: 'North Sumatra',
         category: 'alam',
         image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
-        description: 'Danau vulkanik terbesar di Indonesia dengan pemandangan yang menakjubkan',
+        description: 'The largest volcanic lake in Indonesia with breathtaking scenery',
         popular: false
     },
     {
@@ -87,7 +87,7 @@ const destinations = [
         location: 'Sanur, Bali',
         category: 'kuliner',
         image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
-        description: 'Warung legendaris dengan ikan bakar khas Bali',
+        description: 'Legendary eatery serving signature Balinese grilled fish',
         popular: false
     },
     {
@@ -96,7 +96,7 @@ const destinations = [
         location: 'Jakarta',
         category: 'budaya',
         image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
-        description: 'Museum terbesar di Indonesia dengan koleksi artefak bersejarah',
+        description: 'The largest museum in Indonesia with a rich collection of historical artifacts',
         popular: false
     },
     {
@@ -105,7 +105,7 @@ const destinations = [
         location: 'Yogyakarta',
         category: 'kuliner',
         image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
-        description: 'Kuliner khas Yogyakarta yang wajib dicoba',
+        description: 'Iconic Yogyakarta dish that every visitor should try',
         popular: false
     }
 ];
@@ -175,12 +175,12 @@ function renderDestinations() {
     `).join('');
 }
 
-// Get category label
+// Get category label (display labels in English)
 function getCategoryLabel(category) {
     const labels = {
-        'alam': '🏔️ Alam',
-        'budaya': '🏛️ Budaya',
-        'kuliner': '🍜 Kuliner'
+        'alam': '🏔️ Nature',
+        'budaya': '🏛️ Historical',
+        'kuliner': '🍜 Culinary'
     };
     return labels[category] || category;
 }

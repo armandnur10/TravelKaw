@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontak & Booking - TravelKaw</title>
+    <title>Contact & Booking - TravelKaw</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar sticky">
-        <div class="container">
-            <div class="nav-brand">
-                <h1>🌴 TravelKaw</h1>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="destinasi.html">Destinasi</a></li>
-                <li><a href="galeri.html">Galeri</a></li>
-                <li><a href="tentang.html">Tentang</a></li>
-                <li><a href="kontak.html" class="active">Kontak</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="navbar-container">
+            <div class="navbar-inner">
+                <button class="menu-btn">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <span class="menu-text">Menu</span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinasi.html">Destination</a></li>
+                    <li><a href="galeri.html">Gallery</a></li>
+                    <li><a href="kontak.html" class="active">Contact</a></li>
+                </ul>
+                <div class="nav-right">
+                    <button class="search-btn">
+                        <span>🔍</span>
+                        <span>Search</span>
+                    </button>
+                    <a href="kontak.html" class="btn-nav">Get Started</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -31,8 +39,8 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Kontak & Booking</h1>
-            <p>Hubungi kami atau rencanakan perjalanan wisata Anda</p>
+            <h1>Contact & Booking</h1>
+            <p>Contact us or book your travel</p>
         </div>
     </section>
 
@@ -41,7 +49,7 @@
         <div class="container">
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <h2>Informasi Kontak</h2>
+                    <h2>Contact Information</h2>
                     <div class="info-item">
                         <div class="info-icon">📧</div>
                         <div>
@@ -52,31 +60,31 @@
                     <div class="info-item">
                         <div class="info-icon">📱</div>
                         <div>
-                            <h3>Telepon</h3>
+                            <h3>Phone Number</h3>
                             <p>+62 812-3456-7890</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <div class="info-icon">📍</div>
                         <div>
-                            <h3>Alamat</h3>
+                            <h3>Address</h3>
                             <p>Jakarta, Indonesia</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <div class="info-icon">🕐</div>
                         <div>
-                            <h3>Jam Operasional</h3>
-                            <p>Senin - Jumat: 09:00 - 17:00 WIB</p>
+                            <h3>Work Hours</h3>
+                            <p>Mon - Fri: 09:00 - 17:00 WIB</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact-form-wrapper">
-                    <h2>Form Booking / Pertanyaan</h2>
+                    <h2>Form Booking / Question</h2>
                     <form id="contactForm" class="contact-form">
                         <div class="form-group">
-                            <label for="nama">Nama Lengkap *</label>
+                            <label for="nama">Full Name *</label>
                             <input type="text" id="nama" name="nama" required>
                             <span class="error-message" id="errorNama"></span>
                         </div>
@@ -88,9 +96,9 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="destinasi">Destinasi yang Dituju</label>
+                            <label for="destinasi">Selected Destination</label>
                             <select id="destinasi" name="destinasi">
-                                <option value="">Pilih Destinasi</option>
+                                <option value="">Select Destinasi</option>
                                 <option value="raja-ampat">Raja Ampat, Papua</option>
                                 <option value="borobudur">Candi Borobudur, Magelang</option>
                                 <option value="kuta-bali">Pantai Kuta, Bali</option>
@@ -102,12 +110,12 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="pesan">Pesan / Pertanyaan *</label>
+                            <label for="pesan">Feedback / Question *</label>
                             <textarea id="pesan" name="pesan" rows="5" required></textarea>
                             <span class="error-message" id="errorPesan"></span>
                         </div>
 
-                        <button type="submit" class="btn-primary btn-full">Kirim Pesan</button>
+                        <button type="submit" class="btn-primary btn-full">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -119,9 +127,9 @@
         <div class="modal-content">
             <span class="modal-close">&times;</span>
             <div class="modal-icon">✅</div>
-            <h2>Pesan Berhasil Dikirim!</h2>
-            <p>Terima kasih telah menghubungi kami. Kami akan segera merespons pesan Anda.</p>
-            <button class="btn-primary" onclick="closeModal()">Tutup</button>
+            <h2>Successfully Sent Message!</h2>
+            <p>Thank you for contacting us. We will respond to your message as soon as possible.</p>
+            <button class="btn-primary" onclick="closeModal()">Close</button>
         </div>
     </div>
 
@@ -131,27 +139,26 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>🌴 TravelKaw</h3>
-                    <p>Platform terpercaya untuk menemukan destinasi wisata lokal Indonesia terbaik.</p>
+                    <p>Trusted platform for discovering the best local travel destinations in Indonesia.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="destinasi.html">Destinasi</a></li>
-                        <li><a href="galeri.html">Galeri</a></li>
-                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="destinasi.html">Destination</a></li>
+                        <li><a href="galeri.html">Gallery</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Kategori</h4>
+                    <h4>Categories</h4>
                     <ul>
-                        <li><a href="destinasi.html?kategori=alam">Wisata Alam</a></li>
-                        <li><a href="destinasi.html?kategori=budaya">Wisata Budaya</a></li>
-                        <li><a href="destinasi.html?kategori=kuliner">Wisata Kuliner</a></li>
+                        <li><a href="destinasi.html?kategori=alam">Nature Tourism</a></li>
+                        <li><a href="destinasi.html?kategori=budaya">Cultural Tourism</a></li>
+                        <li><a href="destinasi.html?kategori=kuliner">Culinary Tourism</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Kontak</h4>
+                    <h4>Contact</h4>
                     <p>📧 info@TravelKaw.com</p>
                     <p>📱 +62 812-3456-7890</p>
                 </div>

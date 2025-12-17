@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelKaw - Travel & Wisata Lokal Indonesia</title>
+    <title>TravelKaw - Local Travel & Tourism in Indonesia</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar sticky">
-        <div class="container">
-            <div class="nav-brand">
-                <h1>🌴 TravelKaw</h1>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="destinasi.html">Destinasi</a></li>
-                <li><a href="galeri.html">Galeri</a></li>
-                <li><a href="tentang.html">Tentang</a></li>
-                <li><a href="kontak.html">Kontak</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="navbar-container">
+            <div class="navbar-inner">
+                <button class="menu-btn">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <span class="menu-text">Menu</span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="destinasi.html">Destination</a></li>
+                    <li><a href="galeri.html">Gallery</a></li>
+                    <li><a href="kontak.html">Contact</a></li>
+                </ul>
+                <div class="nav-right">
+                    <button class="search-btn">
+                        <span>🔍</span>
+                        <span>Search</span>
+                    </button>
+                    <a href="kontak.html" class="btn-nav">Get Started</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -32,13 +40,124 @@
     <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title">Jelajahi Keindahan Indonesia</h1>
-            <p class="hero-subtitle">Temukan destinasi wisata lokal terbaik dari Sabang sampai Merauke</p>
-            
-            <!-- Search Bar -->
-            <div class="search-box">
-                <input type="text" placeholder="Cari destinasi wisata..." id="searchInput">
-                <button class="btn-search">🔍 Cari</button>
+            <h1 class="hero-title">TravelKaw</h1>
+            <p class="hero-subtitle">Discover The Incomparable Underwater Wonders And Stunning Natural Beauty Of Traveling! Enjoy An Unforgettable Adventure In This Stunning Destination.</p>
+            <a href="detail.html?id=1" class="btn-search" style="display: inline-block; text-decoration: none;">Let's Go</a>
+        </div>
+    </section>
+
+    <!-- Featured Destinations Horizontal -->
+    <section class="featured-destinations">
+        <div class="container">
+            <h2>Featured Destinations</h2>
+            <div class="destinations-scroll">
+                <div class="destination-card-horizontal">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Pulau Misool">
+                    </div>
+                    <div class="card-content">
+                        <h3>Pulau Misool</h3>
+                        <p class="card-location">📍 Papua Barat</p>
+                        <p class="card-description">A small island located on the edge of the very clear ocean.</p>
+                    </div>
+                </div>
+                <div class="destination-card-horizontal">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Wayag">
+                    </div>
+                    <div class="card-content">
+                        <h3>Wayag</h3>
+                        <p class="card-location">📍 Raja Ampat</p>
+                        <p class="card-description">An island surrounded by rocks and also very blue ocean.</p>
+                    </div>
+                </div>
+                <div class="destination-card-horizontal">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Arborek">
+                    </div>
+                    <div class="card-content">
+                        <h3>Arborek</h3>
+                        <p class="card-location">📍 Raja Ampat</p>
+                        <p class="card-description">A place with an extended bridge along the oceanfront is very iconic.</p>
+                    </div>
+                </div>
+                <div class="destination-card-horizontal">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Pianemo">
+                    </div>
+                    <div class="card-content">
+                        <h3>Pianemo</h3>
+                        <p class="card-location">📍 Raja Ampat</p>
+                        <p class="card-description">Places that can be visited using a small boat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two Column Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="content-left">
+                    <span class="subtitle">The Raja Ampat</span>
+                    <h2>The Unmatched Beauty of the Archipelago</h2>
+                    <p>Raja Ampat offers unparalleled natural beauty with panoramic views that will take your breath away. The incredible underwater treasures make it one of the most beautiful diving destinations in the world.</p>
+                    <div class="image-collage" style="min-height: 500px;">
+                        
+                    </div>
+                </div>
+                <div class="content-right">
+                    <div class="dark-card">
+                        <h2>Visit Raja Ampat with us</h2>
+                        <p>Let's quickly join and experience the beauty of Raja Ampat using the promo we provide. Hurry up and book tickets for your family now.</p>
+                        <div class="btn-group">
+                            <a href="kontak.html" class="btn-search" style="display: inline-block; text-decoration: none;">Let's Go</a>
+                            <a href="kontak.html" class="btn-search" style="display: inline-block; text-decoration: none;">$120,00</a>
+                        </div>
+                        <div class="image-collage" style="margin-top: 30px;">
+                            <div class="collage-item">
+                                <img src="https://images.unsplash.com/photo-1623468020653-b0682380e56b?w=300" alt="Collage">
+                            </div>
+                            <div class="collage-item">
+                                <img src="https://images.unsplash.com/photo-1650509570418-5a9ca4aa01a3?w=300" alt="Collage">
+                            </div>
+                            <div class="collage-item">
+                                <img src="https://images.unsplash.com/photo-1601844075967-c1376c021732?w=300" alt="Collage">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="content-left">
+                    <h2>Discover your destination</h2>
+                    <p>Let's get to know the beauty that Indonesia has.</p>
+                    <div class="pricing-grid">
+                        <div class="pricing-plan starter">
+                            <h3>Starter Plan</h3>
+                        </div>
+                        <div class="pricing-plan family">
+                            <h3>Family Plan</h3>
+                        </div>
+                        <div class="pricing-plan premium">
+                            <h3>Premium Plan</h3>
+                        </div>
+                        <div class="pricing-plan vip">
+                            <h3>VIP Plan</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right">
+                    <h2>The best price for this destination</h2>
+                    <a href="kontak.html" class="btn-primary">See More</a>
+                </div>
             </div>
         </div>
     </section>
@@ -46,25 +165,25 @@
     <!-- Kategori Wisata -->
     <section class="categories">
         <div class="container">
-            <h2 class="section-title">Kategori Wisata</h2>
+            <h2 class="section-title">Destination Categories</h2>
             <div class="category-grid">
                 <div class="category-card">
                     <div class="category-icon">🏔️</div>
-                    <h3>Alam</h3>
-                    <p>Gunung, pantai, danau, dan keindahan alam lainnya</p>
-                    <a href="destinasi.html?kategori=alam" class="btn-category">Jelajahi</a>
+                    <h3>Nature</h3>
+                    <p>Mountain, Beach, Lake, and other nature attractions</p>
+                    <a href="destinasi.html?kategori=alam" class="btn-category">Explore</a>
                 </div>
                 <div class="category-card">
                     <div class="category-icon">🏛️</div>
-                    <h3>Budaya</h3>
-                    <p>Candi, museum, tradisi, dan warisan budaya Nusantara</p>
-                    <a href="destinasi.html?kategori=budaya" class="btn-category">Jelajahi</a>
+                    <h3>Historical</h3>
+                    <p>Temple, Museum, Tradition, and Nusantara Cultural Heritage</p>
+                    <a href="destinasi.html?kategori=budaya" class="btn-category">Explore</a>
                 </div>
                 <div class="category-card">
                     <div class="category-icon">🍜</div>
-                    <h3>Kuliner</h3>
-                    <p>Kuliner khas daerah dan tempat makan terbaik</p>
-                    <a href="destinasi.html?kategori=kuliner" class="btn-category">Jelajahi</a>
+                    <h3>Culinary</h3>
+                    <p>The best local culinary in the destination place</p>
+                    <a href="destinasi.html?kategori=kuliner" class="btn-category">Explore</a>
                 </div>
             </div>
         </div>
@@ -73,7 +192,7 @@
     <!-- Featured Destinations -->
     <section class="featured">
         <div class="container">
-            <h2 class="section-title">Destinasi Populer</h2>
+            <h2 class="section-title">Popular Destination</h2>
             <div class="destination-grid">
                 <div class="destination-card">
                     <div class="card-image">
@@ -83,7 +202,7 @@
                         </div>
                     </div>
                     <div class="card-content">
-                        <span class="card-category">Alam</span>
+                        <span class="card-category">Nature</span>
                         <h3>Raja Ampat, Papua</h3>
                         <p class="card-location">📍 Papua Barat</p>
                         <p class="card-description">Surga bawah laut dengan keindahan terumbu karang yang menakjubkan</p>
@@ -98,7 +217,7 @@
                         </div>
                     </div>
                     <div class="card-content">
-                        <span class="card-category">Budaya</span>
+                        <span class="card-category">Historical</span>
                         <h3>Candi Borobudur</h3>
                         <p class="card-location">📍 Magelang, Jawa Tengah</p>
                         <p class="card-description">Candi Buddha terbesar di dunia, warisan budaya UNESCO</p>
@@ -113,7 +232,7 @@
                         </div>
                     </div>
                     <div class="card-content">
-                        <span class="card-category">Alam</span>
+                        <span class="card-category">Nature</span>
                         <h3>Pantai Kuta, Bali</h3>
                         <p class="card-location">📍 Badung, Bali</p>
                         <p class="card-description">Pantai eksotis dengan sunset yang memukau</p>
@@ -128,7 +247,7 @@
                         </div>
                     </div>
                     <div class="card-content">
-                        <span class="card-category">Budaya</span>
+                        <span class="card-category">Historical</span>
                         <h3>Candi Prambanan</h3>
                         <p class="card-location">📍 Sleman, Yogyakarta</p>
                         <p class="card-description">Kompleks candi Hindu terbesar di Indonesia</p>
@@ -144,27 +263,26 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>🌴 TravelKaw</h3>
-                    <p>Platform terpercaya untuk menemukan destinasi wisata lokal Indonesia terbaik.</p>
+                    <p>Trusted Platform for Finding the Best Local Tourist Attractions in Indonesia.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="destinasi.html">Destinasi</a></li>
-                        <li><a href="galeri.html">Galeri</a></li>
-                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="destinasi.html">Destination</a></li>
+                        <li><a href="galeri.html">Gallery</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Kategori</h4>
+                    <h4>Categories</h4>
                     <ul>
-                        <li><a href="destinasi.html?kategori=alam">Wisata Alam</a></li>
-                        <li><a href="destinasi.html?kategori=budaya">Wisata Budaya</a></li>
-                        <li><a href="destinasi.html?kategori=kuliner">Wisata Kuliner</a></li>
+                        <li><a href="destinasi.html?kategori=alam">Nature Tourism</a></li>
+                        <li><a href="destinasi.html?kategori=budaya">Cultural Tourism</a></li>
+                        <li><a href="destinasi.html?kategori=kuliner">Culinary Tourism</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Kontak</h4>
+                    <h4>Contact</h4>
                     <p>📧 info@TravelKaw.com</p>
                     <p>📱 +62 812-3456-7890</p>
                 </div>

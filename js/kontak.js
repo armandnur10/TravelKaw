@@ -92,30 +92,30 @@ function validateField(fieldName, value) {
     switch (fieldName) {
         case 'nama':
             if (value === '') {
-                errorMessage = 'Nama tidak boleh kosong';
+                errorMessage = 'Name cannot be empty';
                 isValid = false;
             } else if (value.length < 3) {
-                errorMessage = 'Nama minimal 3 karakter';
+                errorMessage = 'Name must be at least 3 characters long';
                 isValid = false;
             }
             break;
 
         case 'email':
             if (value === '') {
-                errorMessage = 'Email tidak boleh kosong';
+                errorMessage = 'Email cannot be empty';
                 isValid = false;
             } else if (!isValidEmail(value)) {
-                errorMessage = 'Format email tidak valid';
+                errorMessage = 'Email format is not valid';
                 isValid = false;
             }
             break;
 
         case 'pesan':
             if (value === '') {
-                errorMessage = 'Pesan tidak boleh kosong';
+                errorMessage = 'Message cannot be empty';
                 isValid = false;
             } else if (value.length < 10) {
-                errorMessage = 'Pesan minimal 10 karakter';
+                errorMessage = 'Message must be at least 10 characters long';
                 isValid = false;
             }
             break;

@@ -1,10 +1,10 @@
 // Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
+    const menuBtn = document.querySelector('.menu-btn');
     const navMenu = document.querySelector('.nav-menu');
 
-    if (hamburger && navMenu) {
-        hamburger.addEventListener('click', function() {
+    if (menuBtn && navMenu) {
+        menuBtn.addEventListener('click', function() {
             navMenu.classList.toggle('active');
         });
 

@@ -2,15 +2,15 @@
 const detailData = {
     1: {
         name: 'Raja Ampat, Papua',
-        location: 'Papua Barat',
+        location: 'West Papua',
         category: 'alam',
         image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920',
         description: `
-            <p>Raja Ampat adalah kepulauan yang terletak di barat laut Papua. Destinasi ini terkenal sebagai surga bawah laut dengan keanekaragaman hayati laut yang sangat tinggi. Raja Ampat memiliki lebih dari 1.500 pulau kecil dan memiliki lebih dari 75% spesies karang dunia.</p>
-            <p>Keindahan bawah laut Raja Ampat tidak ada duanya. Anda dapat menyelam atau snorkeling di berbagai spot yang menawarkan pemandangan terumbu karang yang masih sangat alami, berbagai jenis ikan tropis, dan bahkan bisa bertemu dengan hiu, manta ray, dan berbagai biota laut lainnya.</p>
-            <p>Selain keindahan bawah laut, Raja Ampat juga menawarkan pemandangan darat yang tidak kalah menakjubkan. Pulau-pulau kecil dengan pasir putih, laguna biru, dan hutan tropis yang masih asri menjadi daya tarik tersendiri bagi para pengunjung.</p>
+            <p>Raja Ampat is an archipelago located in northwest Papua. This destination is famous as an underwater paradise with incredibly rich marine biodiversity. Raja Ampat has more than 1,500 small islands and is home to over 75% of the world’s coral species.</p>
+            <p>The underwater beauty of Raja Ampat is unmatched. You can dive or snorkel at various spots that offer pristine coral reefs, colorful tropical fish, and the chance to see sharks, manta rays, and many other marine creatures.</p>
+            <p>Beyond the sea, Raja Ampat also offers stunning landscapes. Small islands with white-sand beaches, turquoise lagoons, and lush tropical forests make this area a dream destination for nature lovers.</p>
         `,
-        hours: '24 Jam (Buka Setiap Hari)',
+        hours: '24 hours (Open every day)',
         price: 'Rp 500.000 - Rp 1.000.000',
         mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127672.1234567890!2d130.5!3d-0.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMzAnMDAuMCJTIDEzMMKwMzAnMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid',
         gallery: [
@@ -22,16 +22,16 @@ const detailData = {
     },
     2: {
         name: 'Candi Borobudur',
-        location: 'Magelang, Jawa Tengah',
+        location: 'Magelang, Central Java',
         category: 'budaya',
         image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920',
         description: `
-            <p>Candi Borobudur adalah candi Buddha terbesar di dunia dan merupakan salah satu warisan budaya UNESCO. Candi ini dibangun pada abad ke-9 dan terletak di Magelang, Jawa Tengah. Borobudur merupakan mahakarya arsitektur yang menggambarkan perjalanan spiritual menuju pencerahan.</p>
-            <p>Candi ini memiliki struktur yang unik dengan 9 tingkat yang melambangkan perjalanan dari dunia nafsu menuju dunia tanpa bentuk. Di setiap dindingnya terdapat relief yang menceritakan kisah-kisah Buddha dan kehidupan sehari-hari pada masa itu.</p>
-            <p>Borobudur tidak hanya menjadi tempat wisata, tetapi juga tempat ziarah bagi umat Buddha. Setiap tahun, pada hari Waisak, ribuan umat Buddha berkumpul di sini untuk merayakan hari suci mereka. Pemandangan sunrise dari puncak candi juga menjadi daya tarik utama bagi para wisatawan.</p>
+            <p>Borobudur Temple is the largest Buddhist temple in the world and one of UNESCO’s World Heritage sites. Built in the 9th century in Magelang, Central Java, Borobudur is an architectural masterpiece that represents the spiritual journey toward enlightenment.</p>
+            <p>The temple has a unique structure with nine levels symbolizing the path from the world of desire to the formless realm. Its walls are adorned with reliefs that tell stories about Buddha and daily life during that era.</p>
+            <p>Borobudur is not only a tourist destination but also an important pilgrimage site for Buddhists. Every year on Vesak Day, thousands of devotees gather here to celebrate. Watching the sunrise from the top of the temple is one of the most iconic experiences for visitors.</p>
         `,
-        hours: '06:00 - 17:00 WIB (Setiap Hari)',
-        price: 'Rp 50.000 (Domestik) / Rp 350.000 (Mancanegara)',
+        hours: '06:00 AM - 05:00 PM (Every day)',
+        price: 'Rp 50,000 (Domestic) / Rp 350,000 (International)',
         mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.1234567890!2d110.2!3d-7.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMzYnMDAuMCJTIDExMMKwMTInMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid',
         gallery: [
             'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
@@ -46,12 +46,12 @@ const detailData = {
         category: 'alam',
         image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920',
         description: `
-            <p>Pantai Kuta adalah salah satu pantai paling terkenal di Bali. Terletak di Kabupaten Badung, pantai ini terkenal dengan ombaknya yang cocok untuk berselancar dan sunset yang sangat indah. Pantai Kuta memiliki pasir putih yang halus dan panjang pantai yang cukup luas.</p>
-            <p>Selain aktivitas berselancar, pengunjung juga dapat menikmati berbagai aktivitas seperti berjalan-jalan di sepanjang pantai, bermain voli pantai, atau sekadar bersantai sambil menikmati pemandangan. Banyak restoran dan kafe di sepanjang pantai yang menawarkan makanan dan minuman sambil menikmati pemandangan laut.</p>
-            <p>Pantai Kuta juga terkenal dengan kehidupan malamnya. Setelah matahari terbenam, area sekitar pantai menjadi ramai dengan berbagai bar, klub, dan restoran yang menawarkan hiburan hingga larut malam.</p>
+            <p>Kuta Beach is one of the most famous beaches in Bali. Located in Badung Regency, it is well known for its waves that are perfect for surfing and its spectacular sunsets. The beach features soft white sand and a long shoreline.</p>
+            <p>Besides surfing, visitors can enjoy activities such as walking along the beach, playing beach volleyball, or simply relaxing while taking in the ocean views. Numerous restaurants and cafés line the beach, offering food and drinks with a sea view.</p>
+            <p>Kuta Beach is also famous for its vibrant nightlife. After sunset, the surrounding area comes alive with bars, clubs, and restaurants that offer entertainment late into the night.</p>
         `,
-        hours: '24 Jam (Buka Setiap Hari)',
-        price: 'Gratis',
+        hours: '24 hours (Open every day)',
+        price: 'Free',
         mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.1234567890!2d115.1!3d-8.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwNDInMDAuMCJTIDExNcKwMDYnMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid',
         gallery: [
             'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
@@ -66,12 +66,12 @@ const detailData = {
         category: 'budaya',
         image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920',
         description: `
-            <p>Candi Prambanan adalah kompleks candi Hindu terbesar di Indonesia dan juga merupakan warisan budaya UNESCO. Candi ini dibangun pada abad ke-9 dan terletak di perbatasan antara Yogyakarta dan Jawa Tengah. Prambanan dikenal dengan arsitektur yang sangat indah dan detail relief yang menakjubkan.</p>
-            <p>Kompleks candi ini terdiri dari tiga candi utama yang didedikasikan untuk Trimurti: Brahma (pencipta), Wisnu (pemelihara), dan Siwa (penghancur). Candi Siwa adalah yang tertinggi dengan ketinggian 47 meter. Di sekeliling candi utama terdapat ratusan candi kecil yang disebut candi perwara.</p>
-            <p>Setiap malam, di area candi diadakan pertunjukan sendratari Ramayana yang menceritakan kisah epik Ramayana dengan latar belakang candi yang diterangi cahaya. Pertunjukan ini menjadi daya tarik utama bagi para wisatawan yang ingin menikmati kombinasi antara keindahan candi dan seni pertunjukan tradisional.</p>
+            <p>Prambanan Temple is the largest Hindu temple complex in Indonesia and is also a UNESCO World Heritage site. Built in the 9th century on the border of Yogyakarta and Central Java, Prambanan is renowned for its beautiful architecture and intricate relief carvings.</p>
+            <p>The complex consists of three main temples dedicated to the Trimurti: Brahma (the creator), Vishnu (the preserver), and Shiva (the destroyer). The Shiva temple is the tallest, standing at 47 meters. Surrounding the main temples are hundreds of smaller shrines called perwara temples.</p>
+            <p>Each night, a Ramayana ballet performance is held in the temple area, telling the epic story of Ramayana with the illuminated temple as a dramatic backdrop. This performance is a major highlight for visitors who want to experience a blend of cultural heritage and traditional performing arts.</p>
         `,
-        hours: '06:00 - 17:00 WIB (Setiap Hari)',
-        price: 'Rp 50.000 (Domestik) / Rp 350.000 (Mancanegara)',
+        hours: '06:00 AM - 05:00 PM (Every day)',
+        price: 'Rp 50,000 (Domestic) / Rp 350,000 (International)',
         mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1234567890!2d110.4!3d-7.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDInMDAuMCJTIDExMMKwMjQnMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid',
         gallery: [
             'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
@@ -82,12 +82,12 @@ const detailData = {
     }
 };
 
-// Get category label
+// Get category label (display labels in English)
 function getCategoryLabel(category) {
     const labels = {
-        'alam': '🏔️ Alam',
-        'budaya': '🏛️ Budaya',
-        'kuliner': '🍜 Kuliner'
+        'alam': '🏔️ Nature',
+        'budaya': '🏛️ Historical',
+        'kuliner': '🍜 Culinary'
     };
     return labels[category] || category;
 }
@@ -181,4 +181,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-

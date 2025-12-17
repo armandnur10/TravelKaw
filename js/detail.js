@@ -219,7 +219,7 @@ const detailData = {
             'https://www.shutterstock.com/image-photo/jakarta-3-april-2025-national-260nw-2614350301.jpg'
         ]
     },
-     6: {
+     12: {
         name: 'Gudeg Yogyakarta',
         location: 'Yogyakarta',
         category: 'kuliner',

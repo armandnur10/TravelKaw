@@ -1,0 +1,214 @@
+// Destinasi Data
+const destinations = [
+    {
+        id: 1,
+        name: 'Raja Ampat, Papua',
+        location: 'Papua Barat',
+        category: 'alam',
+        image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+        description: 'Surga bawah laut dengan keindahan terumbu karang yang menakjubkan',
+        popular: true
+    },
+    {
+        id: 2,
+        name: 'Candi Borobudur',
+        location: 'Magelang, Jawa Tengah',
+        category: 'budaya',
+        image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+        description: 'Candi Buddha terbesar di dunia, warisan budaya UNESCO',
+        popular: true
+    },
+    {
+        id: 3,
+        name: 'Pantai Kuta, Bali',
+        location: 'Badung, Bali',
+        category: 'alam',
+        image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+        description: 'Pantai eksotis dengan sunset yang memukau',
+        popular: true
+    },
+    {
+        id: 4,
+        name: 'Candi Prambanan',
+        location: 'Sleman, Yogyakarta',
+        category: 'budaya',
+        image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+        description: 'Kompleks candi Hindu terbesar di Indonesia',
+        popular: true
+    },
+    {
+        id: 5,
+        name: 'Gunung Bromo',
+        location: 'Probolinggo, Jawa Timur',
+        category: 'alam',
+        image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+        description: 'Gunung berapi aktif dengan pemandangan sunrise yang spektakuler',
+        popular: false
+    },
+    {
+        id: 6,
+        name: 'Pulau Komodo',
+        location: 'Nusa Tenggara Timur',
+        category: 'alam',
+        image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+        description: 'Habitat asli komodo dan keindahan alam yang menakjubkan',
+        popular: false
+    },
+    {
+        id: 7,
+        name: 'Kampung Budaya Betawi',
+        location: 'Jakarta',
+        category: 'budaya',
+        image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+        description: 'Mengenal budaya Betawi dengan berbagai atraksi tradisional',
+        popular: false
+    },
+    {
+        id: 8,
+        name: 'Pasar Gede Solo',
+        location: 'Surakarta, Jawa Tengah',
+        category: 'kuliner',
+        image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+        description: 'Pasar tradisional dengan berbagai kuliner khas Solo',
+        popular: false
+    },
+    {
+        id: 9,
+        name: 'Danau Toba',
+        location: 'Sumatera Utara',
+        category: 'alam',
+        image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+        description: 'Danau vulkanik terbesar di Indonesia dengan pemandangan yang menakjubkan',
+        popular: false
+    },
+    {
+        id: 10,
+        name: 'Warung Mak Beng',
+        location: 'Sanur, Bali',
+        category: 'kuliner',
+        image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+        description: 'Warung legendaris dengan ikan bakar khas Bali',
+        popular: false
+    },
+    {
+        id: 11,
+        name: 'Museum Nasional',
+        location: 'Jakarta',
+        category: 'budaya',
+        image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+        description: 'Museum terbesar di Indonesia dengan koleksi artefak bersejarah',
+        popular: false
+    },
+    {
+        id: 12,
+        name: 'Gudeg Jogja',
+        location: 'Yogyakarta',
+        category: 'kuliner',
+        image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+        description: 'Kuliner khas Yogyakarta yang wajib dicoba',
+        popular: false
+    }
+];
+
+let currentCategory = 'all';
+let currentSort = 'az';
+
+// Initialize page
+document.addEventListener('DOMContentLoaded', function() {
+    // Check URL parameter for category
+    const urlParams = new URLSearchParams(window.location.search);
+    const kategoriParam = urlParams.get('kategori');
+    if (kategoriParam) {
+        currentCategory = kategoriParam;
+        // Activate corresponding filter button
+        const filterBtn = document.querySelector(`[data-category="${kategoriParam}"]`);
+        if (filterBtn) {
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            filterBtn.classList.add('active');
+        }
+    }
+
+    renderDestinations();
+    setupFilters();
+    setupSorting();
+});
+
+// Render destinations
+function renderDestinations() {
+    const grid = document.getElementById('destinationGrid');
+    if (!grid) return;
+
+    let filtered = [...destinations];
+
+    // Filter by category
+    if (currentCategory !== 'all') {
+        filtered = filtered.filter(dest => dest.category === currentCategory);
+    }
+
+    // Sort
+    if (currentSort === 'az') {
+        filtered.sort((a, b) => a.name.localeCompare(b.name));
+    } else if (currentSort === 'popular') {
+        filtered.sort((a, b) => {
+            if (a.popular && !b.popular) return -1;
+            if (!a.popular && b.popular) return 1;
+            return a.name.localeCompare(b.name);
+        });
+    }
+
+    // Render
+    grid.innerHTML = filtered.map(dest => `
+        <div class="destination-card">
+            <div class="card-image">
+                <img src="${dest.image}" alt="${dest.name}" loading="lazy">
+                <div class="card-overlay">
+                    <a href="detail.html?id=${dest.id}" class="btn-detail">Lihat Detail</a>
+                </div>
+            </div>
+            <div class="card-content">
+                <span class="card-category">${getCategoryLabel(dest.category)}</span>
+                <h3>${dest.name}</h3>
+                <p class="card-location">📍 ${dest.location}</p>
+                <p class="card-description">${dest.description}</p>
+            </div>
+        </div>
+    `).join('');
+}
+
+// Get category label
+function getCategoryLabel(category) {
+    const labels = {
+        'alam': '🏔️ Alam',
+        'budaya': '🏛️ Budaya',
+        'kuliner': '🍜 Kuliner'
+    };
+    return labels[category] || category;
+}
+
+// Setup filters
+function setupFilters() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Update active state
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+
+            // Update category
+            currentCategory = this.getAttribute('data-category');
+            renderDestinations();
+        });
+    });
+}
+
+// Setup sorting
+function setupSorting() {
+    const sortSelect = document.getElementById('sortSelect');
+    if (sortSelect) {
+        sortSelect.addEventListener('change', function() {
+            currentSort = this.value;
+            renderDestinations();
+        });
+    }
+}
+

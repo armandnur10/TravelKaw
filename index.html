@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelKaw - Travel & Wisata Lokal Indonesia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar sticky">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>🌴 TravelKaw</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="destinasi.html">Destinasi</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Jelajahi Keindahan Indonesia</h1>
+            <p class="hero-subtitle">Temukan destinasi wisata lokal terbaik dari Sabang sampai Merauke</p>
+            
+            <!-- Search Bar -->
+            <div class="search-box">
+                <input type="text" placeholder="Cari destinasi wisata..." id="searchInput">
+                <button class="btn-search">🔍 Cari</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kategori Wisata -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Kategori Wisata</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">🏔️</div>
+                    <h3>Alam</h3>
+                    <p>Gunung, pantai, danau, dan keindahan alam lainnya</p>
+                    <a href="destinasi.html?kategori=alam" class="btn-category">Jelajahi</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🏛️</div>
+                    <h3>Budaya</h3>
+                    <p>Candi, museum, tradisi, dan warisan budaya Nusantara</p>
+                    <a href="destinasi.html?kategori=budaya" class="btn-category">Jelajahi</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🍜</div>
+                    <h3>Kuliner</h3>
+                    <p>Kuliner khas daerah dan tempat makan terbaik</p>
+                    <a href="destinasi.html?kategori=kuliner" class="btn-category">Jelajahi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Destinasi Populer</h2>
+            <div class="destination-grid">
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Raja Ampat">
+                        <div class="card-overlay">
+                            <a href="detail.html?id=1" class="btn-detail">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Alam</span>
+                        <h3>Raja Ampat, Papua</h3>
+                        <p class="card-location">📍 Papua Barat</p>
+                        <p class="card-description">Surga bawah laut dengan keindahan terumbu karang yang menakjubkan</p>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Borobudur">
+                        <div class="card-overlay">
+                            <a href="detail.html?id=2" class="btn-detail">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Budaya</span>
+                        <h3>Candi Borobudur</h3>
+                        <p class="card-location">📍 Magelang, Jawa Tengah</p>
+                        <p class="card-description">Candi Buddha terbesar di dunia, warisan budaya UNESCO</p>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Bali">
+                        <div class="card-overlay">
+                            <a href="detail.html?id=3" class="btn-detail">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Alam</span>
+                        <h3>Pantai Kuta, Bali</h3>
+                        <p class="card-location">📍 Badung, Bali</p>
+                        <p class="card-description">Pantai eksotis dengan sunset yang memukau</p>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Prambanan">
+                        <div class="card-overlay">
+                            <a href="detail.html?id=4" class="btn-detail">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Budaya</span>
+                        <h3>Candi Prambanan</h3>
+                        <p class="card-location">📍 Sleman, Yogyakarta</p>
+                        <p class="card-description">Kompleks candi Hindu terbesar di Indonesia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌴 TravelKaw</h3>
+                    <p>Platform terpercaya untuk menemukan destinasi wisata lokal Indonesia terbaik.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinasi.html">Destinasi</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kategori</h4>
+                    <ul>
+                        <li><a href="destinasi.html?kategori=alam">Wisata Alam</a></li>
+                        <li><a href="destinasi.html?kategori=budaya">Wisata Budaya</a></li>
+                        <li><a href="destinasi.html?kategori=kuliner">Wisata Kuliner</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p>📧 info@TravelKaw.com</p>
+                    <p>📱 +62 812-3456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TravelKaw. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

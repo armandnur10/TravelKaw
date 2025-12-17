@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Destinasi - TravelKaw</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar sticky">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>🌴 TravelKaw</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinasi.html">Destinasi</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Detail Content -->
+    <section class="detail-page">
+        <div class="container">
+            <!-- Hero Image -->
+            <div class="detail-hero" id="detailHero">
+                <!-- Will be populated by JS -->
+            </div>
+
+            <!-- Main Content -->
+            <div class="detail-content-wrapper">
+                <div class="detail-main">
+                    <!-- Description -->
+                    <div class="detail-section">
+                        <h2 id="detailTitle">Loading...</h2>
+                        <div class="detail-meta">
+                            <span class="detail-category" id="detailCategory"></span>
+                            <span class="detail-location" id="detailLocation"></span>
+                        </div>
+                        <div class="detail-description" id="detailDescription">
+                            <!-- Will be populated by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Gallery -->
+                    <div class="detail-section">
+                        <h3>Galeri Foto</h3>
+                        <div class="detail-gallery" id="detailGallery">
+                            <!-- Will be populated by JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="detail-sidebar">
+                    <div class="info-card">
+                        <h3>Informasi</h3>
+                        <div class="info-item">
+                            <strong>📍 Lokasi:</strong>
+                            <p id="infoLocation">-</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>🕐 Jam Buka:</strong>
+                            <p id="infoHours">-</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>💰 Harga Tiket:</strong>
+                            <p id="infoPrice">-</p>
+                        </div>
+                        <button class="btn-primary btn-full" onclick="window.location.href='kontak.html'">
+                            📅 Rencanakan Perjalanan
+                        </button>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="map-card">
+                        <h3>📍 Lokasi di Peta</h3>
+                        <div class="map-container" id="mapContainer">
+                            <!-- Google Maps iframe will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-image" id="lightboxImage" src="" alt="">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌴 TravelKaw</h3>
+                    <p>Platform terpercaya untuk menemukan destinasi wisata lokal Indonesia terbaik.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinasi.html">Destinasi</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kategori</h4>
+                    <ul>
+                        <li><a href="destinasi.html?kategori=alam">Wisata Alam</a></li>
+                        <li><a href="destinasi.html?kategori=budaya">Wisata Budaya</a></li>
+                        <li><a href="destinasi.html?kategori=kuliner">Wisata Kuliner</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p>📧 info@TravelKaw.com</p>
+                    <p>📱 +62 812-3456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TravelKaw. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/detail.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

@@ -56,14 +56,15 @@ h1, h2, h3, h4, h5, h6 {
     position: sticky;
     max-width: 1400px;
     margin: 0 auto;
-    background: var(--white);
+    /* background: var(--white); */
+    background: rgba(255, 255, 255, .8);
     border: 2px solid rgba(255, 255, 255, 0.8);
     border-radius: 50px;
     padding: 5px 15px;
 }
 
 .navbar-inner {
-    background: var(--white);
+    /* background: var(--white); */
     border-radius: 50px;
     padding: 12px 25px;
     display: flex;

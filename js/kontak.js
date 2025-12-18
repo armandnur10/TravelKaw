@@ -59,17 +59,14 @@ function validateForm() {
 
     let isValid = true;
 
-    // Validate nama
     if (!validateField('nama', nama)) {
         isValid = false;
     }
 
-    // Validate email
     if (!validateField('email', email)) {
         isValid = false;
     }
 
-    // Validate pesan
     if (!validateField('pesan', pesan)) {
         isValid = false;
     }

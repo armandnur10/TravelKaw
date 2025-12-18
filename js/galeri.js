@@ -76,19 +76,16 @@ function setupLightbox() {
     const lightboxNext = document.querySelector('.lightbox-next');
 
     if (lightbox) {
-        // Close on background click
         lightbox.addEventListener('click', function(e) {
             if (e.target === lightbox) {
                 closeLightbox();
             }
         });
 
-        // Close button
         if (lightboxClose) {
             lightboxClose.addEventListener('click', closeLightbox);
         }
 
-        // Previous button
         if (lightboxPrev) {
             lightboxPrev.addEventListener('click', function(e) {
                 e.stopPropagation();
@@ -96,7 +93,6 @@ function setupLightbox() {
             });
         }
 
-        // Next button
         if (lightboxNext) {
             lightboxNext.addEventListener('click', function(e) {
                 e.stopPropagation();
@@ -104,7 +100,6 @@ function setupLightbox() {
             });
         }
 
-        // Keyboard navigation
         document.addEventListener('keydown', function(e) {
             if (lightbox.classList.contains('active')) {
                 if (e.key === 'Escape') {

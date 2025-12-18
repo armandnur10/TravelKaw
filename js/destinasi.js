@@ -112,14 +112,11 @@ const destinations = [
 let currentCategory = 'all';
 let currentSort = 'az';
 
-// Initialize page
 document.addEventListener('DOMContentLoaded', function() {
-    // Check URL parameter for category
     const urlParams = new URLSearchParams(window.location.search);
     const kategoriParam = urlParams.get('kategori');
     if (kategoriParam) {
         currentCategory = kategoriParam;
-        // Activate corresponding filter button
         const filterBtn = document.querySelector(`[data-category="${kategoriParam}"]`);
         if (filterBtn) {
             document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
@@ -132,19 +129,16 @@ document.addEventListener('DOMContentLoaded', function() {
     setupSorting();
 });
 
-// Render destinations
 function renderDestinations() {
     const grid = document.getElementById('destinationGrid');
     if (!grid) return;
 
     let filtered = [...destinations];
 
-    // Filter by category
     if (currentCategory !== 'all') {
         filtered = filtered.filter(dest => dest.category === currentCategory);
     }
 
-    // Sort
     if (currentSort === 'az') {
         filtered.sort((a, b) => a.name.localeCompare(b.name));
     } else if (currentSort === 'popular') {
@@ -155,7 +149,6 @@ function renderDestinations() {
         });
     }
 
-    // Render
     grid.innerHTML = filtered.map(dest => `
         <div class="destination-card">
             <div class="card-image">
@@ -174,7 +167,6 @@ function renderDestinations() {
     `).join('');
 }
 
-// Get category label (display labels in English)
 function getCategoryLabel(category) {
     const labels = {
         'alam': '🏔️ Nature',
@@ -184,23 +176,19 @@ function getCategoryLabel(category) {
     return labels[category] || category;
 }
 
-// Setup filters
 function setupFilters() {
     const filterBtns = document.querySelectorAll('.filter-btn');
     filterBtns.forEach(btn => {
         btn.addEventListener('click', function() {
-            // Update active state
             filterBtns.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
 
-            // Update category
             currentCategory = this.getAttribute('data-category');
             renderDestinations();
         });
     });
 }
 
-// Setup sorting
 function setupSorting() {
     const sortSelect = document.getElementById('sortSelect');
     if (sortSelect) {

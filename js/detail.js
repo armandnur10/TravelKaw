@@ -320,7 +320,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Close on Escape key
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && lightbox.classList.contains('active')) {
                 lightbox.classList.remove('active');
